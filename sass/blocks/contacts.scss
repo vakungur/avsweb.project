@@ -1,0 +1,27 @@
+$colorContacts: #d3d3d0;
+
+.contacts__svg {
+    fill: $colorContacts;
+    width: 25px;
+    height: 21px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.contacts__tel {
+    font-size: 16px;
+    font-family: 'Geometria';
+    color: $black;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-right: 50px;
+}
+
+.contacts__address {
+    font-size: 16px;
+    font-family: 'Geometria';
+    color: $black;
+    line-height: 1.5;
+    text-decoration: none;
+    margin-right: 35px;
+}

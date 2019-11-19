@@ -1,1 +1,43 @@
+$colorLogo: #8577bb;
+$bgColor: #413471;
+
+.header__wrap {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    padding-top: 20px;
+    padding-bottom: 36px;
+}
+
+.header__svg {
+    fill: $colorLogo;
+    width: 53px;
+    height: 55px;
+    margin: 0;
+    margin-right: 15px;
+}
+
+.header__title {
+    font-size: 36px;
+    font-family: 'Bad Script';
+    color: $black;
+    line-height: 0.667;
+    text-decoration: none;
+}
+
+.header__contacts {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.header__menu {
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu {
+    background-color: $bgColor;  
+}
 
