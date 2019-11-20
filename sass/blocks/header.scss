@@ -41,3 +41,15 @@ $bgColor: #413471;
     background-color: $bgColor;  
 }
 
+@media (max-width: 768px) {
+
+    .header__wrap {
+        justify-content: center;
+        padding-bottom: 13px;
+        
+    }
+    .header__menu {
+        position: relative;
+    }
+
+}

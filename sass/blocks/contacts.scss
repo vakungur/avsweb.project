@@ -25,3 +25,15 @@ $colorContacts: #d3d3d0;
     text-decoration: none;
     margin-right: 35px;
 }
+
+@media (max-width: 510px) {
+    .header__contacts {
+        justify-content: space-around;
+    }
+    .contacts__address {
+        margin-right: 10px;
+    }
+    .contacts__tel {
+        margin-right: 10px;
+    }
+}
