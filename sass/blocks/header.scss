@@ -38,7 +38,7 @@ $bgColor: #413471;
 }
 
 .header__menu {
-    background-color: $bgColor;  
+    background-color: $bgColor;
 }
 
 @media (max-width: 768px) {
@@ -46,10 +46,6 @@ $bgColor: #413471;
     .header__wrap {
         justify-content: center;
         padding-bottom: 13px;
-        
-    }
-    .header__menu {
-        position: relative;
     }
 
 }

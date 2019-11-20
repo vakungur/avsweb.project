@@ -6,7 +6,6 @@
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <title></title>
   <link rel="stylesheet" href="css/style.min.css" type="text/css" />
-  <script src="js/all.min.js"></script>
 </head>
 
 <body>
@@ -39,10 +38,10 @@
       </div>
 
       <div class="header__menu menu">
-          <div class="menu__hamburger">
-              <span></span>
-            </div>
         <ul class="menu__wrap wrap">
+          <button class="menu__hamburger">
+            <span></span>
+          </button>
           <li class="menu__element">
             <a href="#" class="menu__link">О нас</a>
           </li>
@@ -61,49 +60,41 @@
           <li class="menu__element">
             <a href="#" class="menu__link">Контакты</a>
           </li>
-            <button class="menu__button">
+          <button class="menu__button">
             <svg class="menu__svg">
-                <use xlink:href="img/symbol/sprite.svg#phone"></use>
+              <use xlink:href="img/symbol/sprite.svg#phone"></use>
             </svg>Обратный звонок</button>
         </ul>
-      </div>
+        </button>
     </header>
+    <section class="slider">
+      <div class="slider__wrap wrap">
+        <div class="slider__images">
+          <img class="slider__img slider__img--showing" src="/img/slide1.png" alt="Слайд 1">
+          <img class="slider__img" src="/img/slide2.png" alt="Слайд 2">
+          <img class="slider__img" src="/img/slide3.png" alt="Слайд 3">
+        </div>
+        <div class="prev">
+          <div class="arrow-left">
+          </div>
+        </div>
+        <div class="next">
+          <div class="arrow-right">
+          </div>
+        </div>
+        <div class="slider__dots">
+          <div class="slider__dot slider__dot--active"></div>
+          <div class="slider__dot"></div>
+          <div class="slider__dot"></div>
+          <div class="slider__dot"></div>
+        </div>
 
-
-
-
-    <!-- слайдер!! -->
-    <!-- <div class="slider" id="photo">
-      <div class="slider-title">Фото с наших поездок
       </div>
-      <div class="wrap">
-
-        <div class="slider-item fade">
-          <img src="img/slider_1.jpg" alt="slider">
-        </div>
-        <div class="slider-item fade">
-          <img src="img/slider_2.jpg" alt="slider">
-        </div>
-        <div class="slider-item fade">
-          <img src="img/slider_3.jpg" alt="slider">
-        </div>
-        <div class="slider-item fade">
-          <img src="img/slider_4.jpg" alt="slider">
-        </div>
-
-        <div class="prev"><div class="arrow-left"></div></div>
-        <div class="next"><div class="arrow-right"></div></div>
-      </div>
-      <div class="slider-dots">
-        <div class="dot dot-active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </div> -->
+    </section>
 
 
-<!-- форма обратной связи -->
+
+    <!-- форма обратной связи -->
     <!-- <div class="overlay fade">
       <div class="popup">
        <div class="popup-close">&times;
@@ -127,6 +118,7 @@
       </div>
  </div> -->
   </div>
+  <script src="js/all.min.js"></script>
 </body>
 
 </html>

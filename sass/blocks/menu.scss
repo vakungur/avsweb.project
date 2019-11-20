@@ -96,13 +96,14 @@ $bgButton: #6d5cad;
 @media (max-width: 768px) {
    
     .menu__wrap {
-        padding: 9px 0;
-        display: block;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
         margin: 0;
         
     }
     .menu__element {
-       
+
         &:first-child {
             margin-left: 0;
         }
@@ -110,22 +111,46 @@ $bgButton: #6d5cad;
 
     .menu__hamburger {
         display: block;
-       padding-top: 5px;
+        outline: none;
     }
 
     .menu__link {
         padding: 10px 0;
         display: none;
+        &:hover {
+            background-color: transparent;
+        }
         
     }
     .menu__button {
-        position: absolute;
-        right: 0;
-        bottom: 15%;
+        display: none;
+        margin: 0;
+    
     }
 
-    &:hover {
-        background-color: transparent;
+    .menu--active {
+        .menu__hamburger {
+
+            span {
+                display: none;
+            }
+                
+            &::after {
+                transform: rotate(45deg);
+            }
+            &::before {
+                transform: rotate(-45deg) translate(-3px, 3px);
+            }
+            
+        }
+        .menu__link {
+            display: block;
+        }
+
+        .menu__button {
+            display: block;
+        
+        }
     }
 
 }
