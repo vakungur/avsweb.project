@@ -38,7 +38,7 @@ $bgButton: #6d5cad;
 }
 
 .menu__button {
-    background:$bgButton;
+    background: $bgButton;
     width: 218px;
     height: 43px;
     border-radius: 25px;
@@ -49,12 +49,14 @@ $bgButton: #6d5cad;
     cursor: pointer;
     box-shadow: none;
     margin-right: 35px;
-    
+
     &:hover {
-     background: linear-gradient(to top, #01abce, #7ac398);
+        background: linear-gradient(to top, #01abce, #7ac398);
     }
-};
-    
+}
+
+;
+
 .menu__hamburger {
     width: 45px;
     height: 32px;
@@ -66,20 +68,21 @@ $bgButton: #6d5cad;
     cursor: pointer;
     padding-top: 5px;
     padding-left: 5px;
-        
-        &::after, &::before {
-            height: 5px;
-            display: block;
-            background-color: $white;
-            content: '';
 
-        }
+    &::after,
+    &::before {
+        height: 5px;
+        display: block;
+        background-color: $white;
+        content: '';
 
-        span {
-            height: 5px;
-            display: block;
-            background-color: $white;
-            margin: 8px 0;
+    }
+
+    span {
+        height: 5px;
+        display: block;
+        background-color: $white;
+        margin: 8px 0;
 
     }
 }
@@ -94,14 +97,15 @@ $bgButton: #6d5cad;
 }
 
 @media (max-width: 768px) {
-   
+
     .menu__wrap {
         padding: 10px 0;
         display: flex;
         flex-direction: column;
         margin: 0;
-        
+
     }
+
     .menu__element {
 
         &:first-child {
@@ -117,15 +121,17 @@ $bgButton: #6d5cad;
     .menu__link {
         padding: 10px 0;
         display: none;
+
         &:hover {
             background-color: transparent;
         }
-        
+
     }
+
     .menu__button {
         display: none;
         margin: 0;
-    
+
     }
 
     .menu--active {
@@ -134,27 +140,25 @@ $bgButton: #6d5cad;
             span {
                 display: none;
             }
-                
+
             &::after {
                 transform: rotate(45deg);
             }
+
             &::before {
                 transform: rotate(-45deg) translate(-3px, 3px);
             }
-            
+
         }
+
         .menu__link {
             display: block;
         }
 
         .menu__button {
             display: block;
-        
+
         }
     }
 
 }
-
-
-
-
