@@ -10,13 +10,22 @@ if(hamburger) {
 }
 
 // Слайдер
-
-let slides = document.querySelectorAll('.slider__img'), 
-    currentSlide = 0,
-    slideInterval = setInterval(nextSlide, 5000);
-
-function nextSlide() {
-    slides[currentSlide].className = 'slider__img';
-    currentSlide = (currentSlide + 1)% slides.length;
-    slides[currentSlide].className = 'slider__img--showing';
-}
+$('.carousel').owlCarousel({
+    loop:true,
+    margin: 0,
+    dots: true,
+    nav:true,
+    items: 1,
+    navText: [],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})

@@ -3,29 +3,9 @@
     padding-bottom: 55px;
 }
 
-.slider__images {
-    position: relative;
-    max-height: 489px;
-    max-width: 1200px;
-}
-
-.slider__img {
-    position: absolute;
-    opacity: 0;
-    z-index: 1;
-    transition: 1s;
-    object-fit: contain;
-}
-
-.slider__img--showing {
-    opacity: 1;
-    z-index: 2;
-}
-
-.slider__dots {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-    position: absolute;
-    bottom: 0%;
+@media (max-width: 768px) {
+	.slider__wrap {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }

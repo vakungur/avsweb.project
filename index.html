@@ -69,35 +69,16 @@
     </header>
     <section class="slider">
       <div class="slider__wrap wrap">
-        <div class="slider__images">
-          <img class="slider__img slider__img--showing" src="/img/slide1.png" alt="Слайд 1">
-          <img class="slider__img" src="/img/slide2.png" alt="Слайд 2">
-          <img class="slider__img" src="/img/slide3.png" alt="Слайд 3">
-          <div class="prev">
-            <div class="arrow-left">
-            </div>
+        <div class="slider__carousel carousel owl-carousel owl-theme">
+          <div class="carousel__item">
+            <img src="img/slide1.png" alt="Слайд 1">
           </div>
-          <div class="next">
-            <div class="arrow-right">
-            </div>
+          <div class="carousel__item">
+            <img src="img/slide2.png" alt="Слайд 2">
           </div>
-          <ul class="slider__dots">
-            <li class="slider__dot slider__dot--active">
-              <svg class="slider__svg">
-                <use xlink:href="img/symbol/sprite.svg#dotsSlider"></use>
-              </svg>
-            </li>
-            <li class="slider__dot">
-              <svg class="slider__svg">
-                <use xlink:href="img/symbol/sprite.svg#dotsSlider"></use>
-              </svg>
-            </li>
-            <li class="slider__dot">
-              <svg class="slider__svg">
-                <use xlink:href="img/symbol/sprite.svg#dotsSlider"></use>
-              </svg>
-            </li>
-          </ul>
+          <div class="carousel__item">
+            <img src="img/slide3.png" alt="Слайд 3">
+          </div>
         </div>
       </div>
     </section>
