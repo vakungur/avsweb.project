@@ -1,0 +1,102 @@
+$lineColor: #6d5cad;
+$wrapText: #353128;
+
+.gallery__wrap {
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+
+.gallery__tittle {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 48px;
+    font-weight: 400;
+    font-family: "Geometria";
+    color: $black;
+    line-height: 0.5;
+    position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 120px;
+            height: 20px;
+            top: 50px;
+            left: 45%;
+            background-color: $lineColor;
+            background-size: 32px 18px;
+            background-position: 0 0, 0 0, -16px 0, 16px 0px;
+            background-image: linear-gradient(35deg, #fff 11px, transparent 0), linear-gradient(-35deg, #fff 11px, transparent 0), linear-gradient(-145deg, #fff 11px, transparent 0), linear-gradient(145deg, #fff 11px, transparent 0);
+        }
+}
+
+.gallery__list {
+    padding-top: 40px;
+    padding-bottom: 75px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 3, minmax(360px, auto);
+    grid-template-rows: 3, minmax(226, auto);
+}
+
+.gallery__element--1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.gallery__element--2 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.gallery__element--3 {
+    grid-column: span 1;
+    grid-row: span 3;
+}
+
+.gallery__element--4 {
+    grid-column: span 2;
+    grid-row: span 4;
+}
+
+.gallery__element--5 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.gallery__element--6 {
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.gallery__element--7 {
+    grid-column: span 3;
+    grid-row: span 1;
+}
+
+.gallery__element {
+    position: relative;
+}
+
+.gallery__title {
+        background-color: $wrapText;
+        opacity: 0.749;
+        position: absolute;
+        width: 360px;
+        height: 42px;
+        margin: 0;
+        bottom: 0;
+        left: 0;
+        
+        &:hover {
+            background: linear-gradient(to top, #01abce, #7ac398);
+            opacity: 1;
+        }
+}
+
+.gallery__text {
+    font-size: 24px;
+    color: $white;
+    line-height: 0;
+    padding-left: 20px;
+}
