@@ -1,5 +1,19 @@
 $colorContacts: #d3d3d0;
 
+.contacts{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.contacts__svg {
+    fill: $colorContacts;
+    width: 25px;
+    height: 21px;
+    margin: 0;
+    margin-right: 15px;
+}
+
 .contacts__svg {
     fill: $colorContacts;
     width: 25px;

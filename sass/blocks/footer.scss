@@ -1,0 +1,32 @@
+.footer {
+    background: url('../img/footerBg.png');
+}
+.footer__wrap {
+    padding-top: 40px;
+    padding-bottom: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer__link {
+    color: $white;
+}
+
+.contacts__address--textWhite {
+    margin: 0;
+    color: $white;
+    margin-left: 10px;
+}
+
+.contacts__tel--textWhite {
+    margin: 0;
+    color: $white;
+}
+
+@media (max-width: 475px) {
+    .footer__wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+}
