@@ -150,31 +150,24 @@
         </ul>
       </div>
     </footer>
-
-    <!-- форма обратной связи -->
-    <!-- <div class="overlay fade">
-      <div class="popup">
-       <div class="popup-close">&times;
-       </div>
-       <div class="popup-title">
-       Форма обратной связи</div>
-         <div class="popup-form">	
-           <form action="#" class="main-form">
-             <div class="popup-form-header">
-               Узнайте больше о своём отдыхе
-             </div>
-               <label class="popup-form__label" for="phone">
-               Введите ваш номер телефона:
-               </label>
-               <input class="popup-form__input" name="phone" type="tel" required placeholder="+7(978) 973 33 45">
-               <button class="button popup-form__btn">
-                 Оставить заявку!
-               </button>
-           </form>
-         </div>
+    <form action="" class="form__modal modal">
+      <div class="modal__filter"></div>
+      <div class="modal__wrap">
+        <h1 class="modal__title">Заказ обратного звонка</h1>
+        <span class="modal__close">X</span>
+        <div class="modal__input">
+          <label for="modal-name">Имя</label>
+          <input id="modal-name" type="text" name="name" placeholder="">
+        </div>
+        <div class="modal__input">
+          <label for="modal-phone">Телефон</label>
+          <input id="modal-phone" type="tel" name="phone" placeholder="">
+        </div>
+        <button class="modal__button">Отправить</button>
       </div>
- </div> -->
+    </form>
   </div>
+
   <script src="js/all.min.js"></script>
 </body>
 
