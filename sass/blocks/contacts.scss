@@ -1,44 +1,39 @@
 $colorContacts: #d3d3d0;
 
-.contacts{
+.contacts {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    &__svg {
+        fill: $colorContacts;
+        width: 25px;
+        height: 21px;
+        margin: 0;
+        margin-right: 15px;
+        margin-left: 10px;
+    }
+    
+    &__tel {
+        font-size: 16px;
+        font-family: 'Geometria';
+        color: $black;
+        line-height: 1.5;
+        text-decoration: none;
+        margin-right: 50px;
+    }
+    
+    &__address {
+        font-size: 16px;
+        font-family: 'Geometria';
+        color: $black;
+        line-height: 1.5;
+        text-decoration: none;
+        margin-right: 35px;
+    }
 }
 
-.contacts__svg {
-    fill: $colorContacts;
-    width: 25px;
-    height: 21px;
-    margin: 0;
-    margin-right: 15px;
-}
 
-.contacts__svg {
-    fill: $colorContacts;
-    width: 25px;
-    height: 21px;
-    margin: 0;
-    margin-right: 15px;
-}
-
-.contacts__tel {
-    font-size: 16px;
-    font-family: 'Geometria';
-    color: $black;
-    line-height: 1.5;
-    text-decoration: none;
-    margin-right: 50px;
-}
-
-.contacts__address {
-    font-size: 16px;
-    font-family: 'Geometria';
-    color: $black;
-    line-height: 1.5;
-    text-decoration: none;
-    margin-right: 35px;
-}
 
 @media (max-width: 510px) {
     .header__contacts {

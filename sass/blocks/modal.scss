@@ -87,12 +87,23 @@ $borderColor: #bfbfbd;
     border-radius: 25px;
     background-color: $bgButton;
     width: 328px;
-    height: 51px;
+    height: 55px;
     color: $white;
     margin-top: 35px;
     margin-bottom: 78px;
     &:hover {
         background: linear-gradient(to top, #01abce, #7ac398);
         cursor: pointer;
+    }
+}
+
+@media (max-width: 340px) {
+
+    #modal-name, #modal-phone {
+        width: 290px;
+    }
+
+    .modal__button {
+        width: 290px;
     }
 }
