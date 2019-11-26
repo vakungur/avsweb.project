@@ -1,0 +1,98 @@
+$bgButton: #6d5cad;
+$modalBg: #d3d3d0;
+$hederBg: #bcbcbc;
+$modalText: #727273;
+$borderColor: #bfbfbd;
+
+.modal {
+    position: absolute;
+    top: 35%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.modal__filter{
+    background: url('/img/filter.png') top center no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+}
+
+.modal__wrap {
+    @include min-max(300px, 555px, 0px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $modalBg;
+    position: relative;
+    flex-wrap: inherit;
+    
+    .modal__close {
+        position: absolute;
+        color:$black;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        right: 11px;
+        top: 11px;
+        cursor: pointer;
+    }
+}
+
+
+.modal__title {
+    font-size: 24px;
+    color: $black;
+    line-height: 1;
+    text-align: center;
+    background: $hederBg;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+}
+
+.modal__input {
+    margin-top: 32px;
+
+    input {
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $borderColor;
+    border-radius: 25px;
+    background-color: transparent;
+    width: 328px;
+    height: 51px;
+    display: block;
+    text-align: center;
+    }
+
+    label {
+        color: $modalText;
+    }
+}
+
+.modal__button {
+    border: none;
+    border-radius: 25px;
+    background-color: $bgButton;
+    width: 328px;
+    height: 51px;
+    color: $white;
+    margin-top: 35px;
+    margin-bottom: 78px;
+    &:hover {
+        background: linear-gradient(to top, #01abce, #7ac398);
+        cursor: pointer;
+    }
+}
